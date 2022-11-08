@@ -29,8 +29,7 @@ echo "==START=="
 
 hostname
 
-python deepMH_analysis_2_modeling_v1.0.0 -i ${1} -b 100
+python deepMH_analysis_2_modeling_v1.0.0.py -i ${1}.autosome -b 100
 
 echo "==END=="
 date
-
