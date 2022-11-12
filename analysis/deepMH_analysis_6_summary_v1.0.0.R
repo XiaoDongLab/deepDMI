@@ -14,7 +14,7 @@ opt = parse_args(opt_parser);
 
 if (is.null(opt$dir_call) | is.null(opt$dir_acc)){
   print_help(opt_parser)
-  stop("At least -c and -a argument must be supplied (input file).n", call.=FALSE)
+  stop("At least -c and -a argument must be supplied.", call.=FALSE)
 }
 
 print(opt$dir_call); print(opt$dir_acc); print(opt$ncpu)
