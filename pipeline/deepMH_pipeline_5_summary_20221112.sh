@@ -3,7 +3,7 @@
 #$ -S /bin/bash
 #$ -cwd
 # Job name
-#$ -N pre
+#$ -N summary
 # Number of cpu cores required
 #$ -pe smp 60
 # RAM requirement per cpu core
