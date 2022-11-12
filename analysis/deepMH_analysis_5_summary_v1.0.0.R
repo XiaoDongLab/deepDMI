@@ -50,7 +50,14 @@ call_epi = function(dat){
 	return(dat)
 }
 
-### 2. function: determine precision & recall ###
+### 2. function: mse ###
+call_mse = function(dat){
+	observed=dat[,3]; predicted=dat[,4]
+	mse=1/nrow(dat) * sum((observed - predicted)^2)
+	return(mse)
+}
+
+### 3. function: determine precision & recall ###
 acc = function(sn, cri_diffmeth=0.5, cri_pval=0.01){
 	# default criteria:
 	# 1. diff_meth > 0.5
@@ -86,8 +93,13 @@ acc = function(sn, cri_diffmeth=0.5, cri_pval=0.01){
 	tmp4=tmp3[is.na(tmp3[,3]), ]
 	# 6.2. precision
 	dat_precision = nrow(tmp1)/(nrow(tmp1) + nrow(tmp4))
-	dat_out = c(nrow(dat_ori_epimut)/nrow(dat_ori), nrow(dat_ori_epimut)/nrow(dat_ori) / dat_recall * dat_precision, dat_precision, dat_recall, 2*(dat_precision*dat_recall)/(dat_precision+dat_recall))
-	names(dat_out)=c("epimut_freq_raw", "epimut_freq_corrected", "precision", "recall", "f1")
+	
+	### 7. mse ###
+	dat_mse=call_mse(dat_ori)
+	
+	### out ###
+	dat_out = c(dat_mse, nrow(dat_ori_epimut)/nrow(dat_ori), nrow(dat_ori_epimut)/nrow(dat_ori) / dat_recall * dat_precision, dat_precision, dat_recall, 2*(dat_precision*dat_recall)/(dat_precision+dat_recall))
+	names(dat_out)=c("mse", "epimut_freq_raw", "epimut_freq_corrected", "precision", "recall", "f1")
 
 	return(dat_out)
 }
@@ -117,7 +129,7 @@ for(i in 1:length(result)){
 	tmp = rbind(tmp, result[[i]])
 }
 
-colnames(tmp) = c('sampleid', 'epimut_freq_raw', "epimut_freq_corrected", 'precision', 'recall', 'f1', 'cri_no')
+colnames(tmp) = c('sampleid', "mse", 'epimut_freq_raw', "epimut_freq_corrected", 'precision', 'recall', 'f1', 'cri_no')
 
 write.table(tmp, paste(dir_call, "/summary_epimutfreq.txt", sep=""), col.names=T, row.names=F, sep="\t", quote=F)
 
