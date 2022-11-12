@@ -5,8 +5,6 @@ require(ggplot2)
 require(optparse)
 
 option_list = list(
-  # make_option(c("-f", "--file"), type="character", default=NULL, help="dataset file name", metavar="character"),
-  # make_option(c("-o", "--out"), type="character", default="out.txt", help="output file name [default= %default]", metavar="character")
 	  make_option(c("-c", "--dir_call"), type="character", default=NULL, help="Directory of epimutation calls", metavar="character"),
 	  make_option(c("-a", "--dir_acc"), type="character", default=NULL, help="Directory of accuracy estimation", metavar="character"),
 	  make_option(c("-t", "--ncpu"), type="integer", default=24, help="Number of CPUs to use [default= %default]", metavar="number")
@@ -24,22 +22,6 @@ print(opt$dir_call); print(opt$dir_acc); print(opt$ncpu)
 dir_call=opt$dir_call
 dir_acc=opt$dir_acc
 numCores=opt$ncpu
-
-# Rscript deepMH_analysis_6_summary_v1.0.0.R ${dir_call} ${dir_acc} ${ncpu}
-# args = commandArgs(trailingOnly=TRUE)
-
-# homedir="/data/gv_h/lzhang/projects/2022-scepi/2021-scepi-mm"
-# homedir="/data/gv_h/lzhang/projects/2022-scepi/2022-liver-batch1/bs"
-# homedir="/data/gv_h/lzhang/projects/2022-scepi/2022-liver-batch2/bs"
-
-# dir_acc=paste(homedir, "/epimut_call_b100c10_accuracy", sep="")
-# dir_acc=paste(homedir, "/epimut_call_accuracy", sep="")
-# dir_call=paste(homedir, "/epimut_call", sep="")
-
-# dir_call=args[1]
-# dir_acc=args[2]
-# numCores=as.numeric(args[3])
-
 
 setwd(dir_acc)
 
