@@ -17,6 +17,11 @@ Email: dong0265@umn.edu (X.D.)
 Licensed under the GNU Affero General Public License version 3 or later.
 
 #####
+## The deep learning network
+
+![alt text](https://github.com/XiaoDongLab/SCcaller-pipeline/blob/main/sccaller_pipeline_flowchart_v1.0.0.png)
+
+#####
 ## Release Notes
 • v1.0.0, 2024.11.27, Noticed capatability issue with current version of NumPy. Working on a new version.
 
