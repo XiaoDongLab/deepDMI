@@ -38,7 +38,17 @@ DeepDMI is supposed to take a single input file of DNAme patterns across the gen
 | 1 | 10489 | 10490 |  1 |
 | 1 | 10493 | 10494 |  0.5 |
 
-
+• Then run deepDMI_1_prepare.py to reformat the input file
+```shell
+version=v1.0.1; # the version of deepDMI
+sn=YourSampleID; # your input file should be named as: ${sn}.cpg.pooled.bed
+ref=YourReferenceGenome.fasta
+# keep only autosomes
+awk '$1<=22' ${sn}.cpg.pooled.bed \
+  | awk '{print $1 "\t" $2 "\t" $3 "\t" $4/($4+$5)}' \
+  > ${sn}.autosome.bed
+python3 deepDMI_1_prepare_${version}.py -i ${sn}.autosome -r ${ref} -b 100 -c 10
+```
 
 ### Step 2. Train and apply deepDMI model
 
