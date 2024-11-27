@@ -30,6 +30,16 @@ Licensed under the GNU Affero General Public License version 3 or later.
 
 ### Step 1. Prepare input file
 
+DeepDMI is supposed to take a single input file of DNAme patterns across the genome of a single cell. The input file should be formated as a tab-spaced table as the following WITHOUT its header:
+
+| chromosome  | first position of a CpG | second position of a CpG | methylation level [0-1] |
+| ----------- | ---------- | ---------- |  ---------- |
+| 1 | 10484 | 10485 |  0 |
+| 1 | 10489 | 10490 |  1 |
+| 1 | 10493 | 10494 |  0.5 |
+
+
+
 ### Step 2. Train and apply deepDMI model
 
 ### Step 3. Introduce artifical epimutations to the input data
