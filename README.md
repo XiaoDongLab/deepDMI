@@ -26,6 +26,19 @@ Licensed under the GNU Affero General Public License version 3 or later.
 (B) Epimutation detection. The DNN is trained using all CpGs of a single cell and is applied to every CpG within that cell. A significant difference between the observed DNAme status and the predicted status of a CpG indicates that its DNAme status deviates from the genome-wide pattern within the cell, and it is subsequently classified as an epimutation. 
 
 #####
+## Usage
+
+### Step 1. 
+
+### Step 2. 
+
+### Step 3. 
+
+### Step 4. 
+
+### Step 5. 
+
+#####
 ## Release Notes
 • v1.0.0, 2024.11.27, Noticed capatability issue with current version of NumPy. Working on a new version.
 
