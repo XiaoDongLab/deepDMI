@@ -19,7 +19,7 @@ Licensed under the GNU Affero General Public License version 3 or later.
 #####
 ## The deep learning network
 
-![alt text](https://github.com/XiaoDongLab/SCcaller-pipeline/blob/main/sccaller_pipeline_flowchart_v1.0.0.png)
+![alt text]([https://github.com/XiaoDongLab/SCcaller-pipeline/blob/main/sccaller_pipeline_flowchart_v1.0.0.png](https://github.com/XiaoDongLab/deepDMI/blob/main/figures/fig1.png))
 
 #####
 ## Release Notes
