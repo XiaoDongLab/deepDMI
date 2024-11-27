@@ -102,7 +102,7 @@ sort -T ./tmp -k1,1d -k2,2n ${sn}.autosome.tmp2.bed > ${sn}.autosome.artificial.
 
 rm ${sn}.autosome.tmp?.bed
 
-python3 deepMH_analysis_1_prepare_v1.0.0.py -i ${sn}.autosome.artificial -r ${ref} -b 100 -c 10
+python3 deepDMI_2_prepare_${version}.py -i ${sn}.autosome.artificial -r ${ref} -b 100 -c 10
 ```
 
 • The above generates a file named "${sn}.autosome.artificial.pkl", which is used as the input in step 4.
@@ -111,7 +111,7 @@ python3 deepMH_analysis_1_prepare_v1.0.0.py -i ${sn}.autosome.artificial -r ${re
 
 • In step 4, train and apply deepDMI model on the data above.
 ```shell
-python deepDMI_2_model_${version}.py -i ${sn}.autosome.artificial -b 100
+python3 deepDMI_2_model_${version}.py -i ${sn}.autosome.artificial -b 100
 ```
 
 
