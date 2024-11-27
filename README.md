@@ -109,6 +109,7 @@ python3 deepMH_analysis_1_prepare_v1.0.0.py -i ${sn}.autosome.artificial -r ${re
 
 ### Step 4. Train and apply deepDMI model on the input with artifical epimutations
 
+• In step 4, train and apply deepDMI model on the data above.
 ```shell
 python deepDMI_2_model_${version}.py -i ${sn}.autosome.artificial -b 100
 ```
