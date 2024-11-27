@@ -60,7 +60,7 @@ python3 deepDMI_1_prepare_${version}.py -i ${sn}.autosome -r ${ref} -b 100 -c 10
 
 • In step 2, train and apply deepDMI model on the data above.
 ```shell
-python deepDMI_2_model_v1.0.0.py -i ${1}.autosome -b 100
+python deepDMI_2_model_${version}.py -i ${sn}.autosome -b 100
 ```
 
 ### Step 3. Introduce artifical epimutations to the input data
@@ -105,9 +105,14 @@ rm ${sn}.autosome.tmp?.bed
 python3 deepMH_analysis_1_prepare_v1.0.0.py -i ${sn}.autosome.artificial -r ${ref} -b 100 -c 10
 ```
 
-• The above generates a file named "${sn}.autosome.artificial.pkl", which is used as the input in step 4
+• The above generates a file named "${sn}.autosome.artificial.pkl", which is used as the input in step 4.
 
 ### Step 4. Train and apply deepDMI model on the input with artifical epimutations
+
+```shell
+python deepDMI_2_model_${version}.py -i ${sn}.autosome.artificial -b 100
+```
+
 
 ### Step 5. Call epimutations based on step 2 output and estimate accuracy based on step 4 output
 
