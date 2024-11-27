@@ -28,15 +28,15 @@ Licensed under the GNU Affero General Public License version 3 or later.
 #####
 ## Usage
 
-### Step 1. 
+### Step 1. Prepare input file
 
-### Step 2. 
+### Step 2. Train and apply deepDMI model
 
-### Step 3. 
+### Step 3. Introduce artifical epimutations to the input data
 
-### Step 4. 
+### Step 4. Train and apply deepDMI model on the input with artifical epimutations
 
-### Step 5. 
+### Step 5. Call epimutations based on step 2 output and estimate accuracy based on step 4 output
 
 #####
 ## Release Notes
