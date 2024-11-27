@@ -1,5 +1,5 @@
 # deepDMI
-A deep-learning framework for detecting DNA Methylation Instability from single-cell bisulfite sequencing data
+## A deep-learning framework for detecting DNA Methylation Instability from single-cell bisulfite sequencing data
 
 Version: 1.0.1
 
