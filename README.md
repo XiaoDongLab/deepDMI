@@ -19,4 +19,5 @@ Licensed under the GNU Affero General Public License version 3 or later.
 #####
 ## Release Notes
 • v1.0.0, 2024.11.27, Noticed capatability issue with current version of NumPy. Working on a new version.
+
 • v1.0.0, 2022.11.22, 1st release version.
