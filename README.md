@@ -117,6 +117,10 @@ python deepDMI_2_model_${version}.py -i ${sn}.autosome.artificial -b 100
 
 ### Step 5. Call epimutations based on step 2 output and estimate accuracy based on step 4 output
 
+• In step 5, utilize the R functions in the following scripts to call epimutations and estimate accuracy:
+https://github.com/XiaoDongLab/deepDMI/blob/main/code/deepDMI_3_v1.0.1.R
+
+
 #####
 ## Release Notes
 • v1.0.0, 2024.11.27, Noticed capatability issue with current version of NumPy. Working on a new version.
