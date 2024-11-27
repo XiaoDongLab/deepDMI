@@ -53,8 +53,15 @@ awk '$1<=22' ${sn}.cpg.pooled.bed \
 
 python3 deepDMI_1_prepare_${version}.py -i ${sn}.autosome -r ${ref} -b 100 -c 10
 ```
+• The above generates a file named "${sn}.autosome.pkl", which is used as the input in step 2.
+
 
 ### Step 2. Train and apply deepDMI model
+
+• In step 2, train and apply deepDMI model on the data above.
+```shell
+python deepDMI_2_model_v1.0.0.py -i ${1}.autosome -b 100
+```
 
 ### Step 3. Introduce artifical epimutations to the input data
 
