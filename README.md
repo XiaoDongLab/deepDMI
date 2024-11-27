@@ -17,7 +17,7 @@ Email: dong0265@umn.edu (X.D.)
 Licensed under the GNU Affero General Public License version 3 or later.
 
 #####
-## The deep learning network
+## The deep neural network architecture of deepDMI
 
 ![alt text](https://github.com/XiaoDongLab/deepDMI/blob/main/figures/fig1.png)
 
