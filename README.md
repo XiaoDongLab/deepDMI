@@ -29,7 +29,7 @@ Licensed under the GNU Affero General Public License version 3 or later.
 • dill 0.3.9
 
 #####
-## The deep neural network architecture of deepDMI
+## Introduction
 
 ![alt text](https://github.com/XiaoDongLab/deepDMI/blob/main/figures/fig1.png)
 
