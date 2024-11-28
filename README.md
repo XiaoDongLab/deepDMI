@@ -102,7 +102,7 @@ sort -T ./tmp -k1,1d -k2,2n ${sn}.autosome.tmp2.bed > ${sn}.autosome.artificial.
 
 rm ${sn}.autosome.tmp?.bed
 
-python3 deepDMI_2_prepare_${version}.py -i ${sn}.autosome.artificial -r ${ref} -b 100 -c 10
+python3 deepDMI_1_prepare_${version}.py -i ${sn}.autosome.artificial -r ${ref} -b 100 -c 10
 ```
 
 • The above generates a file named "${sn}.autosome.artificial.pkl", which is used as the input in step 4.
