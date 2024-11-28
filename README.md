@@ -17,6 +17,13 @@ Email: dong0265@umn.edu (X.D.)
 Licensed under the GNU Affero General Public License version 3 or later.
 
 #####
+## Dependencies
+• python 3.11
+• tensorflow 2.18.0
+• tensorflow-probability 0.25.0
+• tf-keras 2.18.0
+
+#####
 ## The deep neural network architecture of deepDMI
 
 ![alt text](https://github.com/XiaoDongLab/deepDMI/blob/main/figures/fig1.png)
