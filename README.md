@@ -3,7 +3,7 @@ A deep-learning framework for detecting DNA Methylation Instability from single-
 
 Version: 1.0.1
 
-Updated date: 2024.11.27
+Updated date: 2024.11.28
 
 Citation: Lei Zhang, Josh Bartz, Yiwei Zhao, Linshan Laux, Shamsed Mahmud, Moonsook Lee, Xavier Revelo, Alexander Y. Maslov, Albert-László Barabási, Laura J. Niedernhofer, Paul D. Robbins, Jan Vijg and Xiao Dong. Concurrent single-cell methylomic and transcriptomic analysis shows increased epimutation burden and intra-cell type transcriptional noise in human hepatocytes during aging and in fatty liver disease. In submission.
 
@@ -135,6 +135,6 @@ https://github.com/XiaoDongLab/deepDMI/blob/main/code/deepDMI_3_v1.0.1.R
 
 #####
 ## Release Notes
-• v1.0.1, 2024.11.27, fixed compatability issue with current tensorflow version.
+• v1.0.1, 2024.11.28, fixed compatability issue with current tensorflow version.
 
 • v1.0.0, 2022.11.22, 1st version.
