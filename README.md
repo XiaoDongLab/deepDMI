@@ -19,8 +19,11 @@ Licensed under the GNU Affero General Public License version 3 or later.
 #####
 ## Dependencies
 • python 3.11
+
 • tensorflow 2.18.0
+
 • tensorflow-probability 0.25.0
+
 • tf-keras 2.18.0
 
 #####
