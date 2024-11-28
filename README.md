@@ -26,6 +26,8 @@ Licensed under the GNU Affero General Public License version 3 or later.
 
 • tf-keras 2.18.0
 
+• dill 0.3.9
+
 #####
 ## The deep neural network architecture of deepDMI
 
