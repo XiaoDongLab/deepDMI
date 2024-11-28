@@ -137,4 +137,4 @@ https://github.com/XiaoDongLab/deepDMI/blob/main/code/deepDMI_3_v1.0.1.R
 ## Release Notes
 • v1.0.1, 2024.11.27, fixed compatability issue with current tensorflow version.
 
-• v1.0.0, 2022.11.22, 1st release version.
+• v1.0.0, 2022.11.22, 1st version.
